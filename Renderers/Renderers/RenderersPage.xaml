@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage Title="Renderers &amp; Effects" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Renderers" x:Class="Renderers.RenderersPage">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Flash" Clicked="Torch_Handle_Clicked" />
+		<ToolbarItem Text="Camera" Clicked="Camera_Handle_Clicked" />
+	</ContentPage.ToolbarItems>
+	<StackLayout>
+		<!-- CUSTOM RENDERER 1 EXAMPLE -->
+		<local:ExtendedEntry x:Name="_entry" Margin="20" BorderColor="Red" BorderWidth="2" BorderRadius="5" />
+		
+		
+		<!-- CUSTOM RENDERER 2 EXAMPLE -->
+		<!--<Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0" RowSpacing="0" ColumnSpacing="0">
+			<local:MyAwesomeView Grid.Row="0" Grid.Column="0" x:Name="_cameraPreview" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" OnPhotoTaken="Handle_OnPhotoTaken" />
+			<Image Grid.Row="0" Grid.Column="0" Margin="5" x:Name="_photoView" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="100" MinimumWidthRequest="100" Aspect="AspectFit"  />
+		</Grid>-->
+	</StackLayout>
+</ContentPage>
